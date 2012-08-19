@@ -15,7 +15,7 @@
  * @package    ZendService\Rackspace
  * @subpackage Servers
  */
-class SharedIpGroupList implements Countable, Iterator, ArrayAccess
+class Zend_Service_Rackspace_Servers_SharedIpGroupList implements Countable, Iterator, ArrayAccess
 {
     /**
      * @var array of Zend_Service_Rackspace_Servers_SharedIpGroup
@@ -191,7 +191,7 @@ class SharedIpGroupList implements Countable, Iterator, ArrayAccess
         if ($this->offsetExists($offset)) {
             return $this->shared[$offset];
         } else {
-            throw new Exception\OutOfBoundsException('Illegal index');
+            throw new OutOfBoundsException('Illegal index');
         }
     }
 

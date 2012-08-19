@@ -692,7 +692,7 @@ class Zend_Service_Rackspace_Servers extends Zend_Service_Rackspace_Abstract
     public function revertResizeServer($id)
     {
         if (empty($id)) {
-            throw new Exception\InvalidArgumentException('You didn\'t specified the ID of the server');
+            throw new InvalidArgumentException('You didn\'t specified the ID of the server');
         }
         $data= array (
             'revertResize' => null

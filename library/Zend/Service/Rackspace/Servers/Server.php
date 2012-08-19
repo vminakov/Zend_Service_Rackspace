@@ -9,7 +9,7 @@
  */
 
 
-class Server
+class Zend_Service_Rackspace_Servers_Server
 {
     const ERROR_PARAM_CONSTRUCT = 'You must pass a ZendService\Rackspace\Servers object and an array';
     const ERROR_PARAM_NO_NAME   = 'You must pass the server\'s name in the array (name)';
